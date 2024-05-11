@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- TABLA -->
+    <div class="form-datos" id="form-datos">
+      <span>Form Datos:</span>
+      <div class="form-cabecera">
+        <label for="filtrar">Filtrar por:</label>
+        <select name="filtrar" id="filtrar">
+          <option value="todos">Todos</option>
+          <option value="ciudadanos">Ciudadanos</option>
+          <option value="extranjeros">Extranjeros</option>
+        </select>
+        <label for="promedio">Calcular ventas promedio:</label>
+        <input type="text" id="txt-calcular" readonly />
+        <button id="calcular">Calcular</button>
+      </div>
+      <div class="chk-col" id="chk-col">
+        <span>Mostrar columnas:</span>
+        <br />
+        <label for="id">ID:</label>
+        <input type="checkbox" name="id" id="chk-id" class="chk" />
+        <label for="nombre">Nombre:</label>
+        <input type="checkbox" name="nombre" id="chk-nombre" class="chk" />
+        <label for="apellido">Apellido:</label>
+        <input type="checkbox" name="apellido" id="chk-apellido" class="chk" />
+        <label for="fnac">Fnac:</label>
+        <input type="checkbox" name="fnac" id="chk-fnac" class="chk" />
+        <label for="dni">DNI:</label>
+        <input type="checkbox" name="dni" id="chk-dni" class="chk" />
+        <label for="origen">Origen:</label>
+        <input type="checkbox" name="origen" id="chk-origen" class="chk" />
+      </div>
+      <div class="cont-tabla">
+        <table class="tabla" id="tabla">
+          <thead class="tabla-cabecera" id="tabla-cabecera">
+            <tr>
+              <th class="id">ID</th>
+              <th class="nombre">NOMBRE</th>
+              <th class="apellido">APELLIDO</th>
+              <th class="fnac">FNAC</th>
+              <th class="dni">DNI</th>
+              <th class="origen">ORIGEN</th>
+            </tr>
+          </thead>
+          <tbody class="tabla-cuerpo" id="tabla-cuerpo"></tbody>
+        </table>
+      </div>
+      <button id="agregar">Agregar</button>
+    </div>
+    <!-- ABM -->
+    <div class="abm" id="abm">
+      <div class="form-abm">
+        <label for="abm-id">ID:</label>
+        <input type="text" id="abm-id" />
+
+        <label for="abm-nombre">Nombre:</label>
+        <input type="text" id="abm-nombre" />
+
+        <label for="abm-apellido">Apellido:</label
+        ><input type="text" id="abm-apellido" />
+
+        <label for="abm-fnac">Fecha de Nacimiento:</label>
+        <input type="text" id="abm-fnac" />
+
+        <label for="abm-origen">Origen:</label>
+        <input type="text" id="abm-origen" />
+
+        <label for="abm-dni">DNI:</label>
+        <input type="text" id="abm-dni" />
+
+        <label for="abm-tipo">Tipo:</label>
+        <select name="" id="abm-tipo">
+          <option value="ciudadano">Ciudadano</option>
+          <option value="extranjero">Extranjero</option>
+        </select>
+
+        <!-- <label for="abm-opcion">ABM:</label>
+        <select name="" id="abm-opcion">
+          <option value="nada"></option>
+          <option value="alta">Alta</option>
+          <option value="baja">Baja</option>
+          <option value="modificacion">Modificacion</option>
+        </select> -->
+      </div>
+      <div class="form-btn">
+        <button id="abm-alta">Alta</button>
+        <button id="abm-baja">Baja</button>
+        <button id="abm-cancelar">Cancelar</button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
