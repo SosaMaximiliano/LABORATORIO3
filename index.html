@@ -14,10 +14,10 @@
         <label for="filtrar">Filtrar por:</label>
         <select name="filtrar" id="filtrar">
           <option value="todos">Todos</option>
-          <option value="ciudadanos">Ciudadanos</option>
-          <option value="extranjeros">Extranjeros</option>
+          <option value="autos">Autos</option>
+          <option value="camiones">Camiones</option>
         </select>
-        <label for="promedio">Calcular ventas promedio:</label>
+        <label for="promedio">Calcular promedio:</label>
         <input type="text" id="txt-calcular" readonly />
         <button id="calcular">Calcular</button>
       </div>
@@ -26,27 +26,38 @@
         <br />
         <label for="id">ID:</label>
         <input type="checkbox" name="id" id="chk-id" class="chk" />
-        <label for="nombre">Nombre:</label>
-        <input type="checkbox" name="nombre" id="chk-nombre" class="chk" />
-        <label for="apellido">Apellido:</label>
-        <input type="checkbox" name="apellido" id="chk-apellido" class="chk" />
-        <label for="fnac">Fnac:</label>
-        <input type="checkbox" name="fnac" id="chk-fnac" class="chk" />
-        <label for="dni">DNI:</label>
-        <input type="checkbox" name="dni" id="chk-dni" class="chk" />
-        <label for="origen">Origen:</label>
-        <input type="checkbox" name="origen" id="chk-origen" class="chk" />
+        <label for="modelo">Modelo:</label>
+        <input type="checkbox" name="modelo" id="chk-modelo" class="chk" />
+        <label for="anio">Año:</label>
+        <input type="checkbox" name="anio" id="chk-anio" class="chk" />
+        <label for="vel">Vel. Max:</label>
+        <input type="checkbox" name="vel" id="chk-vel" class="chk" />
+        <label for="puertas">Puertas:</label>
+        <input type="checkbox" name="puertas" id="chk-puertas" class="chk" />
+        <label for="asientos">Asientos:</label>
+        <input type="checkbox" name="asientos" id="chk-asientos" class="chk" />
+        <label for="carga">Carga:</label>
+        <input type="checkbox" name="carga" id="chk-carga" class="chk" />
+        <label for="autonomia">Autonomia:</label>
+        <input
+          type="checkbox"
+          name="autonomia"
+          id="chk-autonomia"
+          class="chk"
+        />
       </div>
       <div class="cont-tabla">
         <table class="tabla" id="tabla">
           <thead class="tabla-cabecera" id="tabla-cabecera">
             <tr>
               <th class="id">ID</th>
-              <th class="nombre">NOMBRE</th>
-              <th class="apellido">APELLIDO</th>
-              <th class="fnac">FNAC</th>
-              <th class="dni">DNI</th>
-              <th class="origen">ORIGEN</th>
+              <th class="modelo">MODELO</th>
+              <th class="anio">AÑO</th>
+              <th class="vel">VEL. MAX.</th>
+              <th class="puertas">PUERTAS</th>
+              <th class="asientos">ASIENTOS</th>
+              <th class="carga">CARGA</th>
+              <th class="autonomia">AUTONOMIA</th>
             </tr>
           </thead>
           <tbody class="tabla-cuerpo" id="tabla-cuerpo"></tbody>
@@ -60,25 +71,30 @@
         <label for="abm-id">ID:</label>
         <input type="text" id="abm-id" />
 
-        <label for="abm-nombre">Nombre:</label>
-        <input type="text" id="abm-nombre" />
+        <label for="abm-modelo">Modelo:</label>
+        <input type="text" id="abm-modelo" />
 
-        <label for="abm-apellido">Apellido:</label
-        ><input type="text" id="abm-apellido" />
+        <label for="abm-anio">Año:</label><input type="text" id="abm-anio" />
 
-        <label for="abm-fnac">Fecha de Nacimiento:</label>
-        <input type="text" id="abm-fnac" />
+        <label for="abm-vel">Vel. Max.:</label>
+        <input type="text" id="abm-vel" />
 
-        <label for="abm-origen">Origen:</label>
-        <input type="text" id="abm-origen" />
+        <label for="abm-asientos">Asientos:</label>
+        <input type="text" id="abm-asientos" />
 
-        <label for="abm-dni">DNI:</label>
-        <input type="text" id="abm-dni" />
+        <label for="abm-puertas">Puertas:</label>
+        <input type="text" id="abm-puertas" />
+
+        <label for="abm-carga">Carga:</label>
+        <input type="text" id="abm-carga" />
+
+        <label for="abm-autonomia">Autonomia:</label>
+        <input type="text" id="abm-autonomia" />
 
         <label for="abm-tipo">Tipo:</label>
         <select name="" id="abm-tipo">
-          <option value="ciudadano">Ciudadano</option>
-          <option value="extranjero">Extranjero</option>
+          <option value="auto">Auto</option>
+          <option value="camion">Camion</option>
         </select>
 
         <!-- <label for="abm-opcion">ABM:</label>
@@ -92,6 +108,7 @@
       <div class="form-btn">
         <button id="abm-alta">Alta</button>
         <button id="abm-baja">Baja</button>
+        <button id="abm-modificar">Modificar</button>
         <button id="abm-cancelar">Cancelar</button>
       </div>
     </div>

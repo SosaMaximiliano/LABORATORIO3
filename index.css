@@ -45,6 +45,7 @@ th {
 .tabla-cabecera {
   font-weight: bold;
   text-align: center;
+  cursor: pointer;
 }
 
 .chk {
