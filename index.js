@@ -332,9 +332,9 @@ function ordenarLista(prop) {
 // CALCULA PROMEDIO
 function calcularVelocidadPromedio() {
   let velTotal = lista.reduce((a, e) => {
-    return a + e.velMax;
+    return a + parseInt(e.velMax);
   }, 0);
-  return Math.round(velTotal / lista.length);
+  return velTotal / lista.length;
 }
 
 class Vehiculo {
