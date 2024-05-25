@@ -552,7 +552,7 @@ $("abm-tipo").addEventListener("change", () => {
 // ORDENAR LAS FILAS POR CAMPO
 $("tabla-cabecera")
   .querySelectorAll("th")
-  .forEach((e) => e.addEventListener("click", () => ordenarLista(e.className)));
+  .forEach((e) => e.addEventListener("click", () => ordenarLista(e.id)));
 
 catalogar();
 cargarTabla(lista);
