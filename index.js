@@ -419,7 +419,6 @@ $("calcular").addEventListener("click", () => {
 $("agregar").addEventListener("click", () => {
   let abm = $("abm");
   let formDatos = $("form-datos");
-  let opcion = $("abm-opcion");
   let tipo = $("abm-tipo");
 
   $("abm-id").value = nuevoID();
@@ -434,9 +433,6 @@ $("agregar").addEventListener("click", () => {
   $("abm-puertas").disabled = false;
   $("abm-carga").disabled = true;
   $("abm-autonomia").disabled = true;
-
-  // opcion[0].disabled = false;
-  // opcion[0].selected = true;
 
   abm.style.display == "none"
     ? (abm.style.display = "")
